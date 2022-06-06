@@ -609,4 +609,33 @@ p:last-child {
   font-weight: 700;
   font-family: var(--font-family);
 }
+
+.footer-links h3 {
+  color: var(--violetColor);
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: ar(--font-family);
+}
+
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 16px;
+}
+
+.footer-links ul li a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+
+.footer-links ul li:last-child {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */

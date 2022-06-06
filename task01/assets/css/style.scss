@@ -119,6 +119,7 @@ p {
         }
     }
 }
+
 // Section Title
 .section-title {
     text-align: center;
@@ -569,6 +570,35 @@ p {
         };
     }
 }
-
+.footer-links {
+    h3 {
+        color: var(--violetColor);
+        margin-bottom: 30px;
+        font: {
+            size: 22px;
+            weight: 500;
+            family: ar(--font-family);
+        };
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin-bottom: 16px;
+            a {
+                display: inline-block;
+                font: {
+                    size: 16px;
+                    weight: 600;
+                    family: var(--font-family);
+                };
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 
 
