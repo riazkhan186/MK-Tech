@@ -180,44 +180,27 @@ Default Button Area CSS
 /*================================================
 Default Section Title Area CSS
 =================================================*/
-.default-section-title{
-    h6{
-        position: relative;
-        padding-left: 45px;
-        display: inline-block;
-        color: var(--blackColor);
+.section-title {
+    margin-bottom: 20px;
+    h6 {
+        color: var(--mainColor);
         font: {
-            size: var(--fontSize);
-            family: var(--fontFamily);
-        };
-        &::before{
-            content: '';
-            width: 40px;
-            height: 2px;
-            background-color: var(--mainColor);
-            position: absolute;
-            left: 0px;
-            top: 50%;
-            transform: translateY(-50%);
+            size: 17px;
+            weight: 700;
         }
     }
-    h3{
-        line-height: 1.4;
+    h3 {
+        margin-top: 15px;
         font: {
-            size: 36px;
+            size: 44px;
             weight: 700;
-        };
+            family: var(--fontFamily);
+        }
     }
 }
-.default-section-title-middle{
-    text-align: center;
-    max-width: 720px;
-    margin: {
-        left: auto;
-        right: auto;
-    };
+.section-title-middle {
+    text-align: center
 }
-
 
 /*================================================
 Banner Area CSS
@@ -262,7 +245,110 @@ Banner Area CSS
     }
 }
 
+/*================================================
+Why Choose Us Area CSS
+=================================================*/
+.why-we-card {
+    margin-top: 30px;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 15px;
+    // border: 1px solid rgba($color: #e63434, $alpha: 0.3);
+    box-shadow: 0px 1px 5px -1px #c5c5c550;
+    transition: .5s ease-in-out;
+    background-color: var(--whiteColor);
+    h3 {
+        margin-bottom: 20px;
+        font: {
+            size: var(--card-title-fontSize);
+            weight: 700;
+        };
+    }
+    img {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    &:hover {
+        transform: translateY(-15px);
+    }
+}
 
+/*================================================
+Blog Area CSS
+=================================================*/
+.blog-card {
+    margin-top: 30px;
+    position: relative;
+    background-color: var(--backgroundColor);
+    .blog-img-area {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        img {
+            transition: .5s ease-in-out;
+        }
+    }
+    .blog-text-area {
+        padding: 30px 20px;
+        position: relative;
+        z-index: 1;
+        h3 {
+            margin-bottom: 15px;
+            color: var(--blackColor);
+            transition: .5s ease-in-out;
+            transition-delay: .2s;
+            font: {
+                size: var(--card-title-fontSize);
+                weight: 700;
+            };
+            a {
+                transition: .5s ease-in-out;
+                transition-delay: .2s;
+                position: relative;
+                z-index: 2;
+            }
+        }
+        p {
+            transition: .5s ease-in-out;
+            position: relative;
+            z-index: 2;
+        }
+        .read-more-btn {
+            color: var(--mainColor);
+            transition: .5s ease-in-out;
+            position: relative;
+            z-index: 2;
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            height: 0%;
+            background-color: var(--mainColor);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            transition: .5s ease-in-out;
+        }
+    }
+    
+    &:hover {
+        .blog-img-area {
+            img {
+                transform: scale(1.1);
+            }
+        }
+        .blog-text-area {
+            h3,a,p,.read-more-btn {
+                color: var(--whiteColor);
+                transition-delay: 0s;
+            }
+            &::before {
+                height: 100%;
+            }
+        }
+    }
+}
 
 /*================================================
 Footer Area CSS

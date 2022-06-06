@@ -967,38 +967,25 @@ Default Button Area CSS
 /*================================================
 Default Section Title Area CSS
 =================================================*/
-.default-section-title h6 {
-  position: relative;
-  padding-left: 45px;
-  display: inline-block;
-  color: var(--blackColor);
-  font-size: var(--fontSize);
-  font-family: var(--fontFamily);
+.section-title {
+  margin-bottom: 20px;
 }
 
-.default-section-title h6::before {
-  content: '';
-  width: 40px;
-  height: 2px;
-  background-color: var(--mainColor);
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.default-section-title h3 {
-  line-height: 1.4;
-  font-size: 36px;
+.section-title h6 {
+  color: var(--mainColor);
+  font-size: 17px;
   font-weight: 700;
 }
 
-.default-section-title-middle {
+.section-title h3 {
+  margin-top: 15px;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
+
+.section-title-middle {
   text-align: center;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*================================================
@@ -1043,6 +1030,126 @@ Banner Area CSS
   font-size: 36px;
   font-weight: 700;
   font-family: var(--fontFamily);
+}
+
+/*================================================
+Why Choose Us Area CSS
+=================================================*/
+.why-we-card {
+  margin-top: 30px;
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 1px 5px -1px #c5c5c550;
+          box-shadow: 0px 1px 5px -1px #c5c5c550;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--whiteColor);
+}
+
+.why-we-card h3 {
+  margin-bottom: 20px;
+  font-size: var(--card-title-fontSize);
+  font-weight: 700;
+}
+
+.why-we-card img {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.why-we-card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+/*================================================
+Blog Area CSS
+=================================================*/
+.blog-card {
+  margin-top: 30px;
+  position: relative;
+  background-color: var(--backgroundColor);
+}
+
+.blog-card .blog-img-area {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.blog-card .blog-img-area img {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog-card .blog-text-area {
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-card .blog-text-area h3 {
+  margin-bottom: 15px;
+  color: var(--blackColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  font-size: var(--card-title-fontSize);
+  font-weight: 700;
+}
+
+.blog-card .blog-text-area h3 a {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-card .blog-text-area p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-card .blog-text-area .read-more-btn {
+  color: var(--mainColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-card .blog-text-area::before {
+  content: '';
+  width: 100%;
+  height: 0%;
+  background-color: var(--mainColor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog-card:hover .blog-img-area img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog-card:hover .blog-text-area h3, .blog-card:hover .blog-text-area a, .blog-card:hover .blog-text-area p, .blog-card:hover .blog-text-area .read-more-btn {
+  color: var(--whiteColor);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.blog-card:hover .blog-text-area::before {
+  height: 100%;
 }
 
 /*================================================
