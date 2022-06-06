@@ -217,3 +217,29 @@ Default Section Title Area CSS
         right: auto;
     };
 }
+
+
+/*================================================
+Banner Area CSS
+=================================================*/
+.banner {
+    background-color: rgba($color: #000000, $alpha: .1);
+}
+.banner-slider-area {
+    
+}
+.banner-single-slider {
+    padding: {
+        top: 50px;
+        bottom: 50px;
+    };
+    .banner-text-area {
+        h1 {
+            font: {
+                size: 36px;
+                weight: 700;
+                family: var(--fontFamily);
+            };
+        }
+    }
+}

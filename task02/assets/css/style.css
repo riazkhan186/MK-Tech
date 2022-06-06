@@ -1000,4 +1000,22 @@ Default Section Title Area CSS
   margin-left: auto;
   margin-right: auto;
 }
+
+/*================================================
+Banner Area CSS
+=================================================*/
+.banner {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.banner-single-slider {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.banner-single-slider .banner-text-area h1 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
 /*# sourceMappingURL=style.css.map */

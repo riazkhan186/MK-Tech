@@ -21,14 +21,14 @@
         meanScreenWidth: "1199",
     });
 
-    $(".home-banner-slider-area").owlCarousel({
+    $(".banner-slider-area").owlCarousel({
         autoplayHoverPause: true,
         autoplaySpeed: 1000,
+        autoHeight: true,
         loop: true,
         autoplay: true,
         dots: true,
         items: 1,
-        animateOut: 'zoomOut',
         nav: true,
         navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
     });
