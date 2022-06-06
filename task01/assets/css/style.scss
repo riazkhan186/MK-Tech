@@ -111,7 +111,14 @@ p {
 .bg-F2F2F2 {
     background-color: #F2F2F2;
 }
-
+.bg-644F9C {
+    background-color: #644F9C;
+    .section-title {
+        h3 {
+            color: var(--whiteColor);
+        }
+    }
+}
 // Section Title
 .section-title {
     text-align: center;
@@ -156,6 +163,13 @@ p {
             size: 16px;
             family: var(--fontSize);
         };
+    }
+}
+.section-title-2 {
+    h3  {
+        &::before, &::after {
+            display: none;
+        }
     }
 }
 

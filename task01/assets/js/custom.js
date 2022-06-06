@@ -96,39 +96,9 @@
     },
     });
 
-    // TweenMax JS
-    // $('.banner-image-area').mousemove(function(e){
-    //         var wx = $(window).width();
-    //         var wy = $(window).height();
-    //         var x = e.pageX - this.offsetLeft;
-    //         var y = e.pageY - this.offsetTop;
-    //         var newx = x - wx/2;
-    //         var newy = y - wy/2;
-    //         $('.banner-main-img').each(function(){
-    //             var speed = $(this).attr('data-speed');
-    //             if($(this).attr('data-revert')) speed *= -.4;
-    //             TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
-    //         });
-    // });
 
 
-    $(".video-popup").magnificPopup({
-        type: "iframe",
-    });
-    
-    // progress bar area 
-    // $('#bar1').barfiller({
-    // duration: 2500,
-    // });
-    // $('#bar2').barfiller({
-    // duration: 2500,
-    // });
-    // $('#bar3').barfiller({
-    // duration: 2500,
-    // });
 
-    // language select
-    $("select").niceSelect();
 
     // Go to Top
     $(function () {
