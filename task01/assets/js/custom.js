@@ -31,27 +31,15 @@
         $('.popup-content').removeClass('hi');
     })
     
-    $(".home-banner-slider-area").owlCarousel({
-        autoplayHoverPause: true,
-        autoplaySpeed: 1000,
-        loop: true,
-        autoplay: true,
-        dots: true,
-        items: 1,
-        animateOut: 'zoomOut',
-        nav: true,
-        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-    });
-    
-    $(".portfolio-slider-area").owlCarousel({
+    $(".slider-content").owlCarousel({
         autoplayHoverPause: true,
         autoplaySpeed: 1500,
         autoplay: true,
         loop: true,
-        dots: false,
+        dots: true,
         margin: 30,
         nav: true,
-        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        navText: ['<i class="fa-solid fa-angle-left"></i>`', '<i class="fa-solid fa-angle-right"></i>'],
         responsive: {
             0: {
                 items: 1,
@@ -60,7 +48,7 @@
                 items: 2,
             },
             992: {
-                items: 3,
+                items: 1.8,
             },
         },
     });
