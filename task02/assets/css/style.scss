@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root {
+    --fontFamily: 'Poppins', sans-serif;
+    --fontFamily2: 'Open Sans', sans-serif;
+    --mainColor: #ff630e;
+    --secondColor: #2e2f46;
+    --backgroundColor: #ebebeb;
+    --transparentColor: #fcebe5;
+    --whiteColor: #ffffff;
+    --blackColor: #242424;
+    --paragraphColor: #666666;
+    --fontSize: 15px;
+    --card-title-fontSize: 22px;
+    --transition: 0.5s;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4{
+    font-family: var(--fontFamily);
+}
+h5,h6{
+    font-family: var(--fontFamily2);
+}
+a {
+    transition: var(--transition);
+    color: var(--blackColor);
+    text-decoration: none;
+    outline: 0 !important;
+
+    &:hover {
+        color: var(--mainColor);
+        text-decoration: none;
+    }
+}
+:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    color: var(--paragraphColor);
+    font-size: var(--fontSize);
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-family: var(--fontFamily2);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.ptb-100 {
+    padding: {
+        top: 100px;
+        bottom: 100px;
+    }
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.ptb-70 {
+    padding: {
+        top: 70px;
+        bottom: 70px;
+    }
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.pt-30{
+    padding-top: 0px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.section-content{
+    margin-top: 10px;
+}
+.sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--whiteColor) !important;
+    z-index: 99999;
+    padding: 0px ;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+.bg-f9faff{
+    background-color: #f9faff;
+}
+.bg-mainColor{
+    background-color: var(--mainColor);
+}
+.bg-000000{
+    background-color: #242325;
+}
+.rs{
+    margin-top: -10px
+}
+
+@import './pager-scss/header';
+
+
+/*================================================
+Default Button Area CSS
+=================================================*/
+.default-button{
+    overflow: hidden;
+    border: 1px solid var(--secondColor);
+    padding: 12px 35px;
+    border-radius: 25px;
+    display: inline-block;
+    color: var(--whiteColor);
+    background-color: var(--secondColor);
+    position: relative;
+    text-align: center;
+    font: {
+        size: 15px;
+        weight: 600;
+        family: var(--fontFamily2);
+    };
+    &::before{
+        content: '';
+        width: 100%;
+        height: 0%;
+        transition: .5s ease;
+        background-color: var(--mainColor);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    &::after{
+        content: '';
+        width: 100%;
+        height: 0%;
+        transition: .5s ease;
+        background-color: var(--mainColor);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+    span{
+        position: relative;
+        z-index: 2;
+    }
+    &:hover{
+        color: var(--whiteColor);
+        border-color: var(--mainColor);
+        &::before, &::after{
+            height: 51%;
+        }
+    }
+}
+
+/*================================================
+Default Section Title Area CSS
+=================================================*/
+.default-section-title{
+    h6{
+        position: relative;
+        padding-left: 45px;
+        display: inline-block;
+        color: var(--blackColor);
+        font: {
+            size: var(--fontSize);
+            family: var(--fontFamily);
+        };
+        &::before{
+            content: '';
+            width: 40px;
+            height: 2px;
+            background-color: var(--mainColor);
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    h3{
+        line-height: 1.4;
+        font: {
+            size: 36px;
+            weight: 700;
+        };
+    }
+}
+.default-section-title-middle{
+    text-align: center;
+    max-width: 720px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+}
